@@ -24,11 +24,30 @@ Para el desarrollo del proyecto necesitamos:
  1. Descargar herramientas para desarrollo del software
  2. Node JS
  3. MongoDB
- 4. Express package
- 5. Además establecer un protocolo de comunicación para responder a las petiociones del cliente y viceversa.
- 6. Este protocolo lo estableceremos con JSON (JavaScript Object Notation) para hacer la transacción de los datos a través de la red.
+ 4. PostMan
+ 5. Express package de Node
+ 6. Aprender lo fundamental de una API restFul para implementarla
+ 7. Además establecer un protocolo de comunicación para responder a las petiociones del cliente y viceversa.
+ 8. Este protocolo lo estableceremos con JSON (JavaScript Object Notation) para hacer la transacción de los datos a través de la red.
  	 
 ## Módulos
+
+### Marco Teórico
+#### API
+#### EndPoint
+#### URL
+#### Http Methods
+#### GET
+#### POST
+#### UPDATE
+#### PUTCH
+#### DELETE
+#### NODEJS
+#### MongoDB
+#### Mongooge
+#### PostMan
+
+
 ### EndPoints
 
 > Una **punto final de comunicación** es un tipo de nodo de red de comunicación "Nodo (informática)"). Es una interfaz expuesta por un comunicante o un canal de comunicación. Un ejemplo de punto final del último tipo sería un tema en un foro o un grupo de un sistema de comunicación.
