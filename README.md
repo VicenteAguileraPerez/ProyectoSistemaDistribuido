@@ -22,11 +22,11 @@ Con la finalidad de tratar de hacer un sistema distribuido que funcione como mí
 Para el desarrollo del proyecto necesitamos:
 
  1. Descargar herramientas para desarrollo del software
-	 2. Node JS
-	 3. MongoDB
-	 4. Express package
+ 2. Node JS
+ 3. MongoDB
+ 4. Express package
  5. Además establecer un protocolo de comunicación para responder a las petiociones del cliente y viceversa.
- 	6. Este protocolo lo estableceremos con JSON (JavaScript Object Notation) para hacer la transacción de los datos a través de la red.
+ 6. Este protocolo lo estableceremos con JSON (JavaScript Object Notation) para hacer la transacción de los datos a través de la red.
  	 
 ## Módulos
 ### EndPoints
