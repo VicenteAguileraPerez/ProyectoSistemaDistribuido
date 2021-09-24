@@ -39,6 +39,8 @@ Para el desarrollo del proyecto necesitamos:
 ### Diagrama de la Base de datos
 Esta será la base de datos para la aplicación a desarrollar, no es una gran base de datos, pero el punto principal, es entender y hacer que la aplicación distribuida funcione de manera correcta.
 
+![Diagrama de la base de datos](diagrama.png)
+
 ```mermaid
 erDiagram  
 People { 
