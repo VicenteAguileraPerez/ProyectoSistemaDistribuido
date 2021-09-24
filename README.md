@@ -44,7 +44,7 @@ Para el desarrollo del proyecto necesitamos:
 #### DELETE
 #### NODEJS
 #### MongoDB
-#### Mongooge
+#### Mongoose
 #### PostMan
 
 
