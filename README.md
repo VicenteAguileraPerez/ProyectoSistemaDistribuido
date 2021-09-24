@@ -1,18 +1,20 @@
 # Proyecto de Sistemas Distribuidos
-
 ## Definición
+Como proyecto final de la materia de Sistemas distribuidos, realizaremos una aplicacion que nos permita aplicar la mayor cantidad de principios y características de estos para poner en práctica lo aprendido en la materia, la cual nos dara una idea fundamental de algo funcional y apegándonos a estándares y tecnologías modernas.
 
-Esta será una aplicación, el cual se trata de poder conectar a varios clientes a través de diferentes medios permitiendo que la comunicación entre esto sea,
-heterogénea, trasparente, concurrente, etc., esto es que varias apps puedan conectarse realizadas en varios lenguajes de programación y que la información pueda hacerse efectiva y llevarse a cabo e implementando.
+## Planeamiento del Problema
+
+Desarrollar una aplicación, el cual se trata de poder conectar a varios clientes a través de diferentes medios permitiendo que la comunicación entre estos, y en el cual se apliquen principios o características de sistemas distribuidos como heterogénea, trasparente, concurrente, etc. En palabras simples, es que varias apps puedan conectarse realizadas en varios lenguajes de programación y que la información pueda hacerse efectiva y llevarse a cabo e implementando.
 Con la finalidad de tratar de hacer un sistema distribuido que funcione como mínimo de manera local, pero tratar de hacerlo que funcione de manera distribuida y de esta manera aplicaremos algunos conceptos y características de sistemas distribuidos limitándonos a lo que nuestro nivel adquisitivo lo permita.
 
 > Sistema distribuído: es un sistema en el que los componentes hardware o software localizados en computadoras unidas mediante red, comunican y coordinan sus acciones sólo mediante paso de mensajes. George, Coulouris.
 
 ## Objetivos
-
- 1. Hacer que la app funcione y se pueda conectar mínimo con ella misma.
- 2. Hacer que otras apps puedan comunicarse con esta app y tratar de entablar una comunicación y que se puedan realizar acciones.
- 3. Tratar de ejemplificar las formas necesarias para establecer comunicación con otras tecnologías, es decir, con otras apps que estén hechas en otros lenguajes de programación o con otras herramientas o tecnologías.
+### Objetivo General
+ 1. Hacer que la app funcione y se pueda conectar mínimo con ella misma aplicando principios de sistemas distribuidos.
+### Objetivos Específicos 
+ 1. Hacer que otras apps puedan comunicarse con esta app y tratar de entablar una comunicación y que se puedan realizar acciones.
+ 2. Tratar de ejemplificar las formas necesarias para establecer comunicación con otras tecnologías, es decir, con otras apps que estén hechas en otros lenguajes de programación o con otras herramientas o tecnologías.
 
 ## Delimitaciones
 
@@ -35,6 +37,7 @@ Para el desarrollo del proyecto necesitamos:
 ### Marco Teórico
 
 ### Marco Conceptual
+#### Sistema Distribuido
 #### API
 #### EndPoint
 #### URL
