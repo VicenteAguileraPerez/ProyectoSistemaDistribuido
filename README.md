@@ -107,20 +107,74 @@ Con las APIs RESTFul podemos facilitar la escalabilidad y el acceso a los datos 
 
 ### Marco Conceptual
 #### Sistema Distribuido
-#### API
-#### EndPoint
-#### URL
-#### Http Methods
-#### GET
-#### POST
-#### UPDATE
-#### PUTCH
-#### DELETE
-#### NODEJS
-#### MongoDB
-#### Mongoose
-#### PostMan
+Sistema en el que los componentes hardware o software localizados en computadoras unidas mediante red, comunican y coordinan sus acciones sólo mediante paso de mensajes.
 
+#### API
+Una API es una interfaz de programación de aplicaciones (del inglés API: Application Programming Interface). Es un conjunto de rutinas que provee acceso a funciones de un determinado software.
+
+Son publicadas por los constructores de software para permitir acceso a características de bajo nivel o propietarias, detallando solamente la forma en que cada rutina debe ser llevada a cabo y la funcionalidad que brinda, sin otorgar información acerca de cómo se lleva a cabo la tarea. Son utilizadas por los programadores para construir sus aplicaciones sin necesidad de volver a programar funciones ya hechas por otros, reutilizando código que se sabe que está probado y que funciona correctamente.
+
+#### Web service
+Un servicio web es cualquier pieza de software que se ofrece a través de Internet y estandariza su comunicación a través de la codificación XML. Un cliente invoca un servicio web enviando una solicitud (generalmente en forma de un mensaje XML), y el servicio envía una respuesta XML. Los servicios web invocan la comunicación a través de una red, con HTTP como el medio más común de conectividad entre los dos sistemas. Para muchos, los servicios web son sinónimo de SOA (Arquitectura Orientada a Servicios) y se basan principalmente en estándares como XML-RPC y SOAP (Protocolo Simple de Acceso a Objetos). Una de las principales críticas del enfoque de los servicios web es el grado en que el cliente y el servidor están acoplados entre sí.
+
+#### REST
+La transferencia de estado representacional (en inglés representational state transfer) o REST es un estilo de arquitectura software para sistemas hipermedia distribuidos como la World Wide Web. El término se originó en el año 2000, en una tesis doctoral sobre la web escrita por Roy Fielding, uno de los principales autores de la especificación del protocolo HTTP y ha pasado a ser ampliamente utilizado por la comunidad de desarrollo.
+
+#### RESTful
+RESTful es la implementación de la arquitectura propuesta sobre servicios HTTP.
+
+#### API RESTful
+Es una interface abstracta para generar comunicación a través de los servicios HTTP. En estas APIs el servidor expone información para que esta sea manipulada por el usuario. Es importante crear API RESTful según los estándares de la industria los cuales resultan en un fácil desarrollo e incremento. Implementación del servidor web que expone información que permite la manipulación de nuestra data como unidad lógica de negocio.
+
+#### Recursos
+Los recursos son URIs para acceder a la manipulación o lectura de nuestra API. Estás se usan ya que en la red para acceder a recursos se usa las URI o URL.
+
+##### EndPoint
+Un punto final de comunicación es un tipo de nodo de red de comunicación "Nodo (informática)"). Es una interfaz expuesta por un comunicante o un canal de comunicación. Un ejemplo de punto finaldel último tipo sería un tema en un foro o un grupo de un sistema de comunicación.
+
+#### URL
+Un LRU o localizador de recursos uniforme (más conocido por las siglas URL, del inglés Uniform Resource Locator)es un identificador de recursos uniforme (Uniform Resource Identifier, URI) cuyos recursos referidos pueden cambiar, esto es, la dirección puede apuntar a recursos variables en el tiempo. Están formados por una secuencia de caracteres de acuerdo con un formato modélico y estándar que designa recursos en una red como, por ejemplo, Internet.
+
+#### Http Request
+Request es una petición, cuando queremos solicitar algo a una API entonces se hace uso de un http request que es una petición que hace uso del protocolo HTTP.
+
+#### Response
+Response es una respuesta y es lo que esperamos que responda nuestra API, siempre se acompañan de un status code.
+
+#### Http Methods
+HTTP define un conjunto de métodos de petición para indicar la acción que se desea realizar para un recurso determinado. Aunque estos también pueden ser sustantivos, estos métodos de solicitud a veces son llamados HTTP verbs. Cada uno de ellos implementan una semántica diferente, pero algunas características similares son compartidas por un grupo de ellos: ej. un request method puede ser safe, idempotent (en-US), o cacheable.
+
+##### GET
+Se usa para lectura de un recurso, ya sea una colección, o bien, un solo registro de este a través de su ID.
+
+##### POST
+Se usa para la creación de un recurso algunos recomiendan poner en el header la url para ver de dónde puedo obtener el recurso creado.
+
+##### HEAD
+Es idéntico a GET, pero el servidor no devuelve el contenido en el HTTP response. Cuando se envía un HEAD request, significa que sólo se está interesado en el código de respuesta y los headers HTTP, no en el propio documento. Con este método el navegador puede comprobar si un documento se ha modificado, por razones de caching.
+
+##### PUT
+Se usa para actualizar o crear un recurso. Esta espera una actualización completa del recurso no solo de algunos campos ya que, si no se envían todos, los campos que no vayan serán nulos.
+
+##### PATCH
+El método PATCH es utilizado para aplicar modificaciones parciales a un recurso.
+
+##### DELETE
+Sirve para eliminar un recurso.
+
+##### NODEJS
+Node.js es un entorno en tiempo de ejecución multiplataforma para la capa del servidor (en el lado del servidor) basado en JavaScript.
+
+Node.js es un entorno controlado por eventos diseñado para crear aplicaciones escalables, permitiéndote establecer y gestionar múltiples conexiones al mismo tiempo. Gracias a esta característica, no tienes que preocuparte con el bloqueo de procesos, pues no hay bloqueos.
+
+##### MongoDB
+MongoDB es una base de datos de documentos que ofrece una gran escalabilidad y flexibilidad, y un modelo de consultas e indexación avanzado.
+
+##### Mongoose
+Mongoose es una librería object-document mapping (ODM) para MongoDB. Las ventajas de utilizar un ODM son muchas y van más allá de la organización del código o del desarrollo sencillo. Mongoose abstrae todo de la base de datos, y el código de la aplicación interactúa solo con los objetos y sus métodos. Los ODM también permiten especificar las relaciones entre diferentes tipos de objectos y poner sobre esta lógica dentro de clases.
+
+##### PostMan
+PostMan es un cliente que nos ayuda a realizar las pruebas en nuestra API y con este cliente podemos probar nuestros endpoints de forma simple.
 
 ### EndPoints
 
