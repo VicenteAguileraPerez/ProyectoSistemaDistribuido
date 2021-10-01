@@ -183,10 +183,10 @@ PostMan es un cliente que nos ayuda a realizar las pruebas en nuestra API y con 
 | HTTP Method |EndPoint      |Atributos |Descripcion|
 |-------------|--------------|----------|-------------------|
 |`GET`        |      /       |          |  obtener todos los registros                 |
-|`GET`        |      /       |    :id   |  obtener un registro                |
+|`GET`        |      /       |    id    |  obtener un registro                |
 |`POST`       |      /       |          |  agregar un usuario		    |
-|`DELETE`     |      /       |    :id   |  eliminar un usuario    	    |
-|`UPDATE`     |      /       |    :id   |  actualizar un usuario		    |
+|`DELETE`     |      /       |    id    |  eliminar un usuario    	    |
+|`UPDATE`     |      /       |    id    |  actualizar un usuario		    |
 
 ### Diagrama de la Base de datos
 Esta será la base de datos para la aplicación a desarrollar, no es una gran base de datos, pero el punto principal, es entender y hacer que la aplicación distribuida funcione de manera correcta.
