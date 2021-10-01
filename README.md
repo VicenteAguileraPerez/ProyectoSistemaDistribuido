@@ -177,15 +177,17 @@ Mongoose es una librería object-document mapping (ODM) para MongoDB. Las ventaj
 PostMan es un cliente que nos ayuda a realizar las pruebas en nuestra API y con este cliente podemos probar nuestros endpoints de forma simple.
 
 ### EndPoints
-
+`URI Principal = *api/v1/people/*`
 > Una **punto final de comunicación** es un tipo de nodo de red de comunicación "Nodo (informática)"). Es una interfaz expuesta por un comunicante o un canal de comunicación. Un ejemplo de punto final del último tipo sería un tema en un foro o un grupo de un sistema de comunicación.
 
 | HTTP Method |EndPoint      |Atributos|Descripcion|
 |-------------|--------------|----------|-------------------|
 |`GET`        |              |          |                   |
-|`POST`       |              |          |					|
-|`DELETE`     |              |          |					|
-|`UPDATE`     |              |          |					|
+|`GET`        |              |          |                   |
+|`GET`        |              |          |                   |
+|`POST`       |              |          |		    |
+|`DELETE`     |              |          |       	    |
+|`UPDATE`     |              |          |		    |
 
 ### Diagrama de la Base de datos
 Esta será la base de datos para la aplicación a desarrollar, no es una gran base de datos, pero el punto principal, es entender y hacer que la aplicación distribuida funcione de manera correcta.
