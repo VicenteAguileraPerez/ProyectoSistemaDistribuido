@@ -180,6 +180,7 @@ PostMan es un cliente que nos ayuda a realizar las pruebas en nuestra API y con 
 
 > Una **punto final de comunicación** es un tipo de nodo de red de comunicación "Nodo (informática)"). Es una interfaz expuesta por un comunicante o un canal de comunicación. Un ejemplo de punto final del último tipo sería un tema en un foro o un grupo de un sistema de comunicación.
 `URI Principal:`**api/v1/people/**
+
 | HTTP Method |EndPoint      |Atributos |Descripcion|
 |-------------|--------------|----------|-------------------|
 |`GET`        |      /       |          |  obtener todos los registros                 |
