@@ -207,5 +207,18 @@ People {
 	string descripcion
 } 
 ```
+### Red de Petri
+#### Diagrama
+##### No Limitada
+##### Vivacidad
+##### Ciclica
+#### Emulación 
+
+### Arquitectura del Sistema
+
+#### Cliente-Servidor
+
+### Capas y niveles
+
 ### APIs para conectarse a la API restful
 
