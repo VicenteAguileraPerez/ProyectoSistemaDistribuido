@@ -208,6 +208,9 @@ People {
 } 
 ```
 ### Red de Petri
+
+![Red de petri](DiagramaRdP.jpeg)
+
 #### Diagrama
 ##### No Limitada
 ##### Vivacidad
