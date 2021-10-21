@@ -213,8 +213,23 @@ People {
 ![Red de petri](DiagramaRdP.jpeg)
 
 ##### No Limitada
+
+limitación en las redes de Petri es una propiedad que indica el número de marcas que puede poseer algún marcado dentro de la red. El número de las limitaciones se determina por medio del numero de marcas,  también existe la opción de que la red solo posea una marca en los marcados, en este caso se llama una red de Petri binaria, otra posibilidad es que algún marcado este generando marcas sin ninguna limitación, en este caso es una red no limitada y es una red mal diseñada.
+
+El diagrama llamado Api rest People es una red de Petri 3-limitadas, debido a que cualquier marcado dentro de la red puede tener tres marcas como máximo.
+
 ##### Vivacidad
+
+Una de las propiedades de las redes de Petri es la vivacidad, esta propiedad determina si para un marcado es alcanzable desde otro, siempre y cuando su transición esta habilitada. Si todas las transiciones de una red son vivas, a la red de Petri se le llama viva.
+
+De acuerdo al diagrama realizado, se puede observar que la red no representa bloqueos, en ninguna de sus plazas, independiente mente de la secuencia de disparo elegida, los diferentes marcados se mantienen vivos.
+
 ##### Ciclica
+
+Una red de Petri tiene la propiedad de cilcicidad o, mejor dicho, tiene un comportamiento globalmente cíclico, si desde cualquier marcado puede llegar a la plaza inicial con una secuencia de disparos.
+
+La red de Petri realizada posee esta propiedad, debido a que, sin importar la secuencia de disparos elegidas en los marcados, las marcas siempre regresa al inicio.
+
 #### Emulación 
 
 ### Arquitectura del Sistema
