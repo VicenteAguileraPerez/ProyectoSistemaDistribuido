@@ -244,7 +244,7 @@ En el modelo cliente-servidor hay dos tipos de componentes:
 
 • Servidores: proveen servicios. Normalmente, los servidores esperan recibir peticiones. Una vez que han recibido una petición, la resuelven y devuelven el resultado al cliente.
 
-Un servidor también puede ser cliente de otros servidores, Los servidores web y los otros servicios disponibles en Internet son clientes del servicio de resolución de nombres (DNS). los buscadores, que permiten a los usuarios acceder a sumarios de información de páginas web extendidas por muchos sitios web de toda Internet. Un buscador es al mismo tiempo servidor y cliente: responde a peticiones provenientes de los navegadores clientes y ejecuta programas que, actuando como clientes, acceden a servidores de Internet buscando información.
+Un servidor también puede ser cliente de otros servidores, Los servidores web y los otros servicios disponibles en Internet son clientes del servicio de resolución de nombres (DNS). Los buscadores, permiten a los usuarios acceder a sumarios de información de páginas web extendidas por muchos sitios web de toda Internet. Un buscador es al mismo tiempo servidor y cliente: responde a peticiones provenientes de los navegadores clientes y ejecuta programas que, actuando como clientes, acceden a servidores de Internet buscando información.
 
 ### Capas y niveles
 
