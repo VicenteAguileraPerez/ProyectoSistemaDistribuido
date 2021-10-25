@@ -231,10 +231,20 @@ Una red de Petri tiene la propiedad de cilcicidad o, mejor dicho, tiene un compo
 La red de Petri realizada posee esta propiedad, debido a que, sin importar la secuencia de disparos elegidas en los marcados, las marcas siempre regresa al inicio.
 
 #### Emulación 
+![Red de petri](EmulacionRdP.gif)
 
 ### Arquitectura del Sistema
 
 #### Cliente-Servidor
+Esta arquitectura es la que estamos más acostumbrados a utilizar en entornos distribuidos. Históricamente ha sido la más usada, y todavía lo es hoy en día. La web es un ejemplo de arquitectura cliente-servidor.
+
+En el modelo cliente-servidor hay dos tipos de componentes:
+
+• Clientes: hacen peticiones de servicio. Normalmente, los clientes inician la comunicación con el servidor.
+
+• Servidores: proveen servicios. Normalmente, los servidores esperan recibir peticiones. Una vez que han recibido una petición, la resuelven y devuelven el resultado al cliente.
+
+Un servidor también puede ser cliente de otros servidores, Los servidores web y los otros servicios disponibles en Internet son clientes del servicio de resolución de nombres (DNS). los buscadores, que permiten a los usuarios acceder a sumarios de información de páginas web extendidas por muchos sitios web de toda Internet. Un buscador es al mismo tiempo servidor y cliente: responde a peticiones provenientes de los navegadores clientes y ejecuta programas que, actuando como clientes, acceden a servidores de Internet buscando información.
 
 ### Capas y niveles
 
