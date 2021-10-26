@@ -19,6 +19,7 @@
   "homepage": "https://github.com/VicenteAguileraPerez/ProyectoSistemaDistribuido#readme",
   "dependencies": {
     "express": "^4.17.1",
+    "mongoose": "^6.0.12",
     "morgan": "^1.10.0"
   },
   "devDependencies": {
