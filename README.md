@@ -247,6 +247,13 @@ En el modelo cliente-servidor hay dos tipos de componentes:
 Un servidor también puede ser cliente de otros servidores, Los servidores web y los otros servicios disponibles en Internet son clientes del servicio de resolución de nombres (DNS). Los buscadores, permiten a los usuarios acceder a sumarios de información de páginas web extendidas por muchos sitios web de toda Internet. Un buscador es al mismo tiempo servidor y cliente: responde a peticiones provenientes de los navegadores clientes y ejecuta programas que, actuando como clientes, acceden a servidores de Internet buscando información.
 
 ### Capas y niveles
+El término arquitectura de software se refería inicialmente a la estructuración del software como capas o módulos en un único computador y más recientemente en términos de los servicios ofrecidos y solicitados entre procesos localizados en el mismo o diferentes computadores. Esta vista orientada a proceso y a servicio puede expresarse en términos de capas de servicio.
+
+#### Plataforma
+El nivel de hardware y las capas más bajas de software se denominan, a menudo, plataforma para sistemas distribuidos y aplicaciones. Estas capas más bajas proporcionan servicios a las que están por encima de ellas, y que son implementadas independientemente en cada computador, proporcionando una interfaz de programación del sistema a un nivel que facilita la comunicación y coordinación entre procesos.
+
+#### Middleware
+El Middleware se ocupa de proporcionar bloques útiles para la construcción de componentes software que puedan trabajar con otros en un sistema distribuido.
 
 ### APIs para conectarse a la API restful
 
