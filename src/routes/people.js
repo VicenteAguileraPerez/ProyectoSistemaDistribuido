@@ -1,33 +1,64 @@
 /******************************************************
     Create new routes with Router of Express
 ******************************************************/
-const {Router} = require('express');
+const {Router, json} = require('express');
 const router = Router();
+/******************************************************
+    Call Mongo
+******************************************************/
+const connectMongo = require('../database/databaseconnection');
+
+/******************************************************
+    Call controller
+******************************************************/
+const controllerPeople = require('../controllers/peopleController');
+
 
 router.get("/hola/:name",(req, res)=>{
     res.send(200,{"message":`Hola mundo ${req.params.name}`});
 });
 
+/******************************************************
+    localhost:3000/api/v1/people/
+******************************************************/
 
 router.get("/",(req, res)=>{
-    res.status(200).send({"todos":[]});
+    controllerPeople.getPeoples(req,res);
+ 
+   
 });
 
+/******************************************************
+    localhost:3000/api/v1/people/617860d32855e42b709cb21f
+******************************************************/
 router.get("/:id",(req, res)=>{
-    res.status(200).send({"people":`people ${req.params.id}`});
+    controllerPeople.getPeople(req,res)
 });
-
+/******************************************************
+    body
+    {
+        "apellidos":"Aguilera Perez",
+        "ciudad_origen":"UPN",
+        "descripcion":"esto es una descripcion",
+        "email":"vicente@hotmail.com",
+        "licenciatura":"ISC",
+        "nombre":"Vicente",
+        "telefono":"4521917054"
+    }
+******************************************************/
 router.post("/",(req, res)=>{
-    console.log(JSON.parse(JSON.stringify(req.body)));
-    res.status(200).send({"message":`Persona creada`});
+    
+   controllerPeople.createPeople(req,res)
 });
-
+/******************************************************
+    localhost:3000/api/v1/people/617860d32855e42b709cb21f
+******************************************************/
 router.delete("/:id",(req, res)=>{
-    res.status(200).send({"delete":`Persona ${req.params.id}`});
+    controllerPeople.deletePeople(req,res);
 });
 
 router.put("/:id",(req, res)=>{
-    res.status(200).send({"update":`Persona ${req.params.id}`});
+    controllerPeople.updatePeople(req,res);
 });
 
 
