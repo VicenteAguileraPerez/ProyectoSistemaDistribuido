@@ -15,7 +15,7 @@ const controllerPeople = require('../controllers/peopleController');
 
 
 router.get("/hola/:name",(req, res)=>{
-    res.send(200,{"message":`Hola mundo ${req.params.name}`});
+    res.status(200).send({"message":`Hola mundo ${req.params.name}`});
 });
 
 /******************************************************
