@@ -340,6 +340,5 @@ Está dividido en tres nodos, en el cual 2 son secundario y uno primario
 -   Las zonas de longitud de onda no están disponibles en todas las regiones.
 
 
-
 ### APIs para conectarse a la API restful
 
