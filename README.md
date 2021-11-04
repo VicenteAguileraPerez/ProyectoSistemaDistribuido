@@ -308,15 +308,15 @@ El objetivo de la fragmentación es encontrar un nivel de particionamiento adecu
 > fragmentación vertical a fragmentos horizontales.
 
 
-## Distribución física de la base de datos
+### Distribución física de la base de datos
 
-### Region
+#### Region
 AWS proporciona a los clientes la flexibilidad de colocar instancias y almacenar datos dentro de múltiples regiones geográficas llamadas Región. Cada región es una colección independiente de recursos de AWS en una geografía definida.
    
 
 ***AWS N. Virginia (us-east-1)***
 
- ### Availability Zones
+ #### Availability Zones
 
 Cada región consta de múltiples ubicaciones aisladas conocidas como zonas de disponibilidad y cada zona de disponibilidad se ejecuta en su propia infraestructura físicamente distinta e independiente y está diseñada para ser altamente confiable.
 
@@ -331,7 +331,7 @@ Está dividido en tres nodos, en el cual 2 son secundario y uno primario
 |***Secundario***|...sistemasdistribu-shard-00-XX-01...:PORT|
 
  
-### AWS Wavelength
+#### AWS Wavelength
 
 -   AWS Wavelength lleva los servicios de AWS al borde de la red 5G, minimizando la latencia para conectarse a una aplicación desde un dispositivo móvil.
 -   El tráfico de aplicaciones puede llegar a los servidores de aplicaciones que se ejecutan en zonas de longitud de onda sin salir de la red del proveedor móvil, lo que reduce los saltos de red adicionales a Internet que pueden resultar en latencias de más de 100 milisegundos, evitando que los clientes aprovechen al máximo los avances de ancho de banda y latencia de 5G.
