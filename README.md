@@ -255,5 +255,91 @@ El nivel de hardware y las capas más bajas de software se denominan, a menudo, 
 #### Middleware
 El Middleware se ocupa de proporcionar bloques útiles para la construcción de componentes software que puedan trabajar con otros en un sistema distribuido.
 
+# Diseño físico de la base de datos
+
+## Fragmentación
+
+El objetivo de la fragmentación es encontrar un nivel de particionamiento adecuado en el rango que va desde tuplas o atributos hasta relaciones completas. Cada relación global puede ser dividida en porciones que no se solapen llamados fragmentos. El mapa resultante se denomina esquema de fragmentación. Una relación global puede dividirse en n fragmentos y un fragmento sólo puede pertenecer a una relación global. El problema de fragmentación se refiere al particionamiento de la información para distribuir cada parte a los diferentes sitios de la red. Inmediatamente aparece la siguiente pregunta: ¿Cuál es la unidad razonable de distribución?. Se puede considerar que una relación completa es lo adecuado ya que las vistas de usuario son subconjuntos de las relaciones. Sin embargo, el uso completo de relaciones no favorece las cuestiones de eficiencia sobre todo aquellas relacionadas con el procesamiento de consultas.
+
+### Horizontal
+
+> La fragmentación horizontal se realiza sobre las tuplas de la
+> relación. Cada fragmento será un subconjunto de las tuplas de la
+> relación. Existen dos variantes de la fragmentación horizontal: la
+> primaria y la derivada. La fragmentación horizontal primaria de una
+> relación se desarrolla empleando los predicados definidos en esa
+> relación. Por el contrario, la fragmentación horizontal derivada
+> consiste en dividir una relación partiendo de los predicados
+> definidos sobre alguna otra.
+
+
+### Vertical
+
+> Una fragmentación vertical de una relación R produce fragmentos R1,
+> R2, ..., Rr, cada uno de los cuales contiene un subconjunto de los
+> atributos de R así como la llave primaria de R. El objetivo de la
+> fragmentación vertical es particionar una relación en un conjunto de
+> relaciones más pequeñas de manera que varias de las aplicaciones de
+> usuario se ejecutarán sobre un fragmento. En este contexto, una
+> fragmentación óptima es aquella que produce un esquema de
+> fragmentación que minimiza el tiempo de ejecución de las consultas
+> de usuario.
+> 
+> La fragmentación vertical ha sido estudiada principalmente dentro del
+> contexto de los sistemas de manejo de bases de datos centralizados
+> como una herramienta de diseño, la cual permite que las consultas de
+> usuario traten con relaciones más pequeñas haciendo, por tanto, un
+> número menor de accesos a páginas. Es más complicada que el
+> particionamiento horizontal, ya que existe un gran número de
+> alternativas para realizarla. Por lo tanto, se utilizan heurísticas
+> para hacer el particionamiento. Los dos enfoques básicos son:
+> 
+> 1. Agrupamiento: Inicia asignando cada atributo a un fragmento, y en cada paso, algunos de los fragmentos satisfaciendo algún criterio se
+> unen para formar un solo fragmento.
+> 
+> 2. División: Inicia con una sola relación realizar un particionamiento basado en el comportamiento de acceso de las
+> consultas sobre los atributos.
+
+
+### Mixta o híbrida
+
+> La forma más simple de construir fragmentación mixta consiste en
+> aplicar fragmentación horizontal a fragmentos verticales, o aplicar
+> fragmentación vertical a fragmentos horizontales.
+
+
+## Distribución física de la base de datos
+
+### Region
+AWS proporciona a los clientes la flexibilidad de colocar instancias y almacenar datos dentro de múltiples regiones geográficas llamadas Región. Cada región es una colección independiente de recursos de AWS en una geografía definida.
+   
+
+***AWS N. Virginia (us-east-1)***
+
+ ### Availability Zones
+
+Cada región consta de múltiples ubicaciones aisladas conocidas como zonas de disponibilidad y cada zona de disponibilidad se ejecuta en su propia infraestructura físicamente distinta e independiente y está diseñada para ser altamente confiable.
+
+-   Cada región tiene múltiples zonas de disponibilidad aisladas (que van desde. 2-6)      
+
+Está dividido en tres nodos, en el cual 2 son secundario y uno primario
+
+| Nivel |  Nombre|
+|--|--|
+| ***Primario*** | ...sistemasdistribu-shard-00-XX-02....:PORT|
+|***Secundario***|...sistemasdistribu-shard-00-XX-00....:PORT|
+|***Secundario***|...sistemasdistribu-shard-00-XX-01...:PORT|
+
+ 
+### AWS Wavelength
+
+-   AWS Wavelength lleva los servicios de AWS al borde de la red 5G, minimizando la latencia para conectarse a una aplicación desde un dispositivo móvil.
+-   El tráfico de aplicaciones puede llegar a los servidores de aplicaciones que se ejecutan en zonas de longitud de onda sin salir de la red del proveedor móvil, lo que reduce los saltos de red adicionales a Internet que pueden resultar en latencias de más de 100 milisegundos, evitando que los clientes aprovechen al máximo los avances de ancho de banda y latencia de 5G.
+-   Los desarrolladores de AWS pueden implementar las aplicaciones en Wavelength Zones, lo que permite a los desarrolladores crear aplicaciones que ofrecen latencias de milisegundos de un solo dígito a dispositivos móviles y usuarios finales.
+-   AWS Wavelength ayuda a ofrecer aplicaciones que requieren latencias de milisegundos de un solo dígito, como la transmisión de juegos y video en vivo, la inferencia de aprendizaje automático en el perímetro y la realidad aumentada y virtual (AR/VR).
+-   Las zonas de longitud de onda no están disponibles en todas las regiones.
+
+
+
 ### APIs para conectarse a la API restful
 
