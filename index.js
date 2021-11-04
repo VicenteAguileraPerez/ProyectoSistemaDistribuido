@@ -10,12 +10,52 @@ const constantes =require('./src/helpers/constantes');
 /******************************************************
     Call Morgan
 ******************************************************/
-const morgan = require('morgan')
+const morgan = require('morgan');
+
 
 /******************************************************
     Initialize Express Instance
 ******************************************************/
 const app = express();
+/******************************************************
+    Swagger info
+******************************************************/
+const swaggerUi = require('swagger-ui-express');
+const swaggerJSDoc = require('swagger-jsdoc');
+const swaggerOptions = {
+    swaggerDefinition: {
+        openapi: '3.0.0',
+        info: {
+            "title": "Sistemas Distribuidos App",
+            "description": "Este es un proyecto de la materia de Sistemas Distribuidos del TecNM campus Uruapan",
+            "contact": {
+              "name": "API Support",
+              "url": "git+https://github.com/VicenteAguileraPerez/",
+              "email": "vicente_prez@hotmail.com"
+            },
+            "license": {
+              "name": "MIT",
+              "url": "https://github.com/git/git-scm.com/blob/main/MIT-LICENSE.txt"
+            },
+            "version": "1.0.0"
+        },
+        servers: [
+            {
+              url: 'http://localhost:3000',
+              description: 'Development server',
+            },
+            {
+                url: 'https://proyecto-sistema-distribuido.herokuapp.com/api/v1/people',
+                description: 'Production Server',
+            },
+          ],
+    },
+    apis: [`.routes/*.js`],
+    
+    
+};
+//https://swagger.io/specification/
+const swaggerDocs = swaggerJSDoc(swaggerOptions);
 
 /******************************************************
     Setting PORT variable pointing an avaliable port
@@ -39,8 +79,10 @@ app.set('json spaces',2);// formatear el json regresado
     ********************************************************/
     app.use(express.urlencoded({extended: false}))//solo acepta textos planos
     app.use(express.json());
-   
-    
+    /******************************************************
+        swagger middleware
+    ******************************************************/
+    app.use("/api/v1/api-docs",swaggerUi.serve,swaggerUi.setup(swaggerDocs));
     
 
 

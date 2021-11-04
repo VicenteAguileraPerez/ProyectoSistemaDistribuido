@@ -1,27 +1,33 @@
-/******************************************************
-    Create new routes with Router of Express
-******************************************************/
+///******************************************************
+///    Create new routes with Router of Express
+///******************************************************/
 const {Router, json} = require('express');
 const router = Router();
-/******************************************************
-    Call Mongo
-******************************************************/
+///******************************************************
+///    Call Mongo
+///******************************************************/
 const connectMongo = require('../database/databaseconnection');
 
-/******************************************************
-    Call controller
-******************************************************/
+///******************************************************
+///    Call controller
+///******************************************************/
 const controllerPeople = require('../controllers/peopleController');
+
 
 
 router.get("/hola/:name",(req, res)=>{
     res.status(200).send({"message":`Hola mundo ${req.params.name}`});
 });
 
-/******************************************************
-    localhost:3000/api/v1/people/
-******************************************************/
 
+
+/**
+ *@swagger
+ * /users:
+ *  get:
+ *   operationId: getUsers
+ *   summary: Gets all users. 
+ */
 router.get("/",(req, res)=>{
     controllerPeople.getPeoples(req,res);
  
