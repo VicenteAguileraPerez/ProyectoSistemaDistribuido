@@ -324,6 +324,7 @@ AWS proporciona a los clientes la flexibilidad de colocar instancias y almacenar
 ***AWS N. Virginia (us-east-1)***
 
 ![region](aws2.png)
+
 ![region_data_center](aws3.jpg)
 
  #### Availability Zones
