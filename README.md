@@ -254,12 +254,17 @@ El nivel de hardware y las capas más bajas de software se denominan, a menudo, 
 
 #### Middleware
 El Middleware se ocupa de proporcionar bloques útiles para la construcción de componentes software que puedan trabajar con otros en un sistema distribuido.
+# Diseño del esquema conceptual
+
+![esquema_conceptual](esquema.jpeg)
 
 # Diseño físico de la base de datos
 
 ## Fragmentación
 
 El objetivo de la fragmentación es encontrar un nivel de particionamiento adecuado en el rango que va desde tuplas o atributos hasta relaciones completas. Cada relación global puede ser dividida en porciones que no se solapen llamados fragmentos. El mapa resultante se denomina esquema de fragmentación. Una relación global puede dividirse en n fragmentos y un fragmento sólo puede pertenecer a una relación global. El problema de fragmentación se refiere al particionamiento de la información para distribuir cada parte a los diferentes sitios de la red. Inmediatamente aparece la siguiente pregunta: ¿Cuál es la unidad razonable de distribución?. Se puede considerar que una relación completa es lo adecuado ya que las vistas de usuario son subconjuntos de las relaciones. Sin embargo, el uso completo de relaciones no favorece las cuestiones de eficiencia sobre todo aquellas relacionadas con el procesamiento de consultas.
+
+![fragmentacion](fragmentación.png)
 
 ### Horizontal
 
@@ -308,15 +313,22 @@ El objetivo de la fragmentación es encontrar un nivel de particionamiento adecu
 > fragmentación vertical a fragmentos horizontales.
 
 
+
 ### Distribución física de la base de datos
 
 #### Region
 AWS proporciona a los clientes la flexibilidad de colocar instancias y almacenar datos dentro de múltiples regiones geográficas llamadas Región. Cada región es una colección independiente de recursos de AWS en una geografía definida.
-   
+
+![regiones](aws1.png)
 
 ***AWS N. Virginia (us-east-1)***
 
+![region](aws2.png)
+![region_data_center](aws3.png)
+
  #### Availability Zones
+
+ ![AWS_Local_Zones](AWS_Local_Zones.png)
 
 Cada región consta de múltiples ubicaciones aisladas conocidas como zonas de disponibilidad y cada zona de disponibilidad se ejecuta en su propia infraestructura físicamente distinta e independiente y está diseñada para ser altamente confiable.
 
@@ -330,6 +342,7 @@ Está dividido en tres nodos, en el cual 2 son secundario y uno primario
 |***Secundario***|...sistemasdistribu-shard-00-XX-00....:PORT|
 |***Secundario***|...sistemasdistribu-shard-00-XX-01...:PORT|
 
+![AWS_Local_Zones_2](mongodb3.png)
  
 #### AWS Wavelength
 
