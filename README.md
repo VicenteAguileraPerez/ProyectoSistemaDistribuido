@@ -264,7 +264,7 @@ El Middleware se ocupa de proporcionar bloques útiles para la construcción de 
 
 El objetivo de la fragmentación es encontrar un nivel de particionamiento adecuado en el rango que va desde tuplas o atributos hasta relaciones completas. Cada relación global puede ser dividida en porciones que no se solapen llamados fragmentos. El mapa resultante se denomina esquema de fragmentación. Una relación global puede dividirse en n fragmentos y un fragmento sólo puede pertenecer a una relación global. El problema de fragmentación se refiere al particionamiento de la información para distribuir cada parte a los diferentes sitios de la red. Inmediatamente aparece la siguiente pregunta: ¿Cuál es la unidad razonable de distribución?. Se puede considerar que una relación completa es lo adecuado ya que las vistas de usuario son subconjuntos de las relaciones. Sin embargo, el uso completo de relaciones no favorece las cuestiones de eficiencia sobre todo aquellas relacionadas con el procesamiento de consultas.
 
-![fragmentacion](fragmentación.png)
+![fragmentacion](fragmentacion.png)
 
 ### Horizontal
 
@@ -324,7 +324,7 @@ AWS proporciona a los clientes la flexibilidad de colocar instancias y almacenar
 ***AWS N. Virginia (us-east-1)***
 
 ![region](aws2.png)
-![region_data_center](aws3.png)
+![region_data_center](aws3.jpg)
 
  #### Availability Zones
 
