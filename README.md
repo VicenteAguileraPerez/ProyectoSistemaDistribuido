@@ -210,7 +210,7 @@ People {
 ### Red de Petri
 #### Diagrama
 
-![Red de petri](DiagramaRdP.jpeg)
+![Red de petri](DiagramaRedPetri.png)
 
 ##### No Limitada
 
