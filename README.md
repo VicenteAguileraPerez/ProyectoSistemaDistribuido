@@ -231,7 +231,7 @@ Una red de Petri tiene la propiedad de cilcicidad o, mejor dicho, tiene un compo
 La red de Petri realizada posee esta propiedad, debido a que, sin importar la secuencia de disparos elegidas en los marcados, las marcas siempre regresa al inicio.
 
 #### Emulación 
-![Red de petri](EmulacionRdP.gif)
+![Red de petri](EmulacionRedPetri.gif)
 
 ### Arquitectura del Sistema
 
