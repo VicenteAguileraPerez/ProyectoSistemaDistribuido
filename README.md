@@ -356,3 +356,8 @@ Está dividido en tres nodos, en el cual 2 son secundario y uno primario
 
 ### APIs para conectarse a la API restful
 
+https://proyecto-sistema-distribuido.herokuapp.com/api/v1/people
+
+
+
+
